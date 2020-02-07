@@ -1,0 +1,35 @@
+body{
+    width: 100vw;
+    min-height: 100vw;
+}
+
+header, nav, main, footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: $couleur_rouge;
+}
+
+nav{
+    background-color: $couleur_rougeFonce;
+}    
+
+main{
+    background-color: $couleur_rougePastel;
+}
+footer{
+    background-color: $couleur_rougeBrun;
+}
+
+
+.global{
+    width: 95%;
+}
+
+
+@media screen and (min-width: 600px){
+
+}
