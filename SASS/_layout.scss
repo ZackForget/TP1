@@ -1,13 +1,14 @@
 body{
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     margin: 0px;
 }
 
 header, nav, main, footer{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 header{
@@ -27,7 +28,8 @@ footer{
 
 
 .global{
-    width: 95%;
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -38,18 +40,23 @@ footer{
         height: 100vh;
     }
 
-    .global{
+    header .global{
         display: flex;
         justify-content:center;
         align-items: center;
         flex-direction: column;
+        background-image: url('../medias/Accueil.jpg');
+        background-position: 50% 50%;
     }
 
-    #logoAccueil{
-        display: flex;
-        justify-content:center;
-       
-    }
+    //.global #photoAccueil{
+        
+      //  height: 100vw;
+      //  display: flex;
+
+     //   align-items: center;
+     //   justify-content:center;
+    //}
 
     .global iframe{
         width: 960px;
