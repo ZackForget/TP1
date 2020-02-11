@@ -12,9 +12,7 @@ header, nav, main, footer{
 }
 
 
-nav{
-    background-color: $couleur_rougeFonce;
-}    
+
 
 main{
     background-color: $couleur_rougePastel;
@@ -28,6 +26,15 @@ footer{
     width: 100%;
 }
 
+#logo{
+    width: 100%;
+    height:10vw;
+}
+
+    #logo{
+        display: flex;
+        align-items: center;
+    }
 
 
 @media screen and (min-width: 600px){
@@ -50,13 +57,26 @@ footer{
         background-color: white;
         height: 100%;
         width: 25%;
-        //justify-content: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }    
+
+    #sectionMusique{
+        background-color: white;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     #musique{
-        background-color: white;
-        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+
 
     //.global #photoAccueil{
         
@@ -68,6 +88,13 @@ footer{
     //}
 
 
+
+@media screen and (min-width: 1600px){
+    #logo{
+        width: 400px;
+        height: 162px;
+    }
+}
 
 
 }
