@@ -14,9 +14,6 @@ header, nav, main, footer{
 
 
 
-main{
-    background-color: $couleur_rougePastel;
-}
 footer{
     background-color: $couleur_rougeBrun;
 }
@@ -36,6 +33,13 @@ footer{
         align-items: center;
     }
 
+    #aPropos{
+        background-color: grey;
+    }
+
+    #store{
+        height: 100vh;
+    }
 
 @media screen and (min-width: 600px){
 
@@ -73,8 +77,33 @@ footer{
     #musique{
         width: 100%;
         display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #aPropos{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+
+        font-size: x-large;
+        background-color: #2a2e31;
+    }
+
+    #textPropos{
+        color: #d2c9c9;
+    }
+
+
+    #album{
+        display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    #textAlbum{
+        display: flex;
+        justify-self: center;
     }
 
 
