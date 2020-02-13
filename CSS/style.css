@@ -299,6 +299,10 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  #albumSpotify {
+    width: 35vw;
+    height: 70vh;
+  }
   #musique {
     width: 100%;
     display: -webkit-box;
@@ -328,7 +332,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 120%;
+    font-size: 115%;
     background-color: #2a2e31;
   }
   #containerPropos {
@@ -363,6 +367,24 @@ footer {
     display: -ms-flexbox;
     display: flex;
     justify-self: center;
+  }
+  #store {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 15px 0px 15px;
+  }
+  #article {
+    width: 25vw;
   }
 }
 
@@ -518,5 +540,9 @@ footer li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

@@ -74,6 +74,12 @@ footer{
         justify-content: space-between;
     }
 
+    #albumSpotify{
+        width: 35vw;
+        height: 70vh;
+    }
+
+
     #musique{
         width: 100%;
         display: flex;
@@ -88,7 +94,7 @@ footer{
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        font-size: 120%;
+        font-size: 115%;
         background-color: #2a2e31;
     }
 
@@ -120,15 +126,18 @@ footer{
         justify-self: center;
     }
 
+    #store{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px 15px 0px 15px;
+    }
 
-    //.global #photoAccueil{
-        
-      //  height: 100vw;
-      //  display: flex;
+    #article{
+        width: 25vw;
+    }
 
-     //   align-items: center;
-     //   justify-content:center;
-    //}
 
     }
 
