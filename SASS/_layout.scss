@@ -14,9 +14,7 @@ header, nav, main, footer{
 
 
 
-footer{
-    background-color: $couleur_rougeBrun;
-}
+
 
 
 .global{
@@ -40,6 +38,7 @@ footer{
     #store{
         height: 100vh;
     }
+
 
 
 
@@ -144,9 +143,7 @@ footer{
     #article{
         width: 25vw;
         overflow: hidden;
-    }
-
-    #article img{
+        
         transition: transform .05s, opacity .05s;
     }
 
@@ -160,14 +157,14 @@ footer{
         flex-direction: column;
 
         position: relative;
-        top: -300px;
+        top: -185px;
         color: white;
         visibility: hidden;
         transition: transform .05s;
     }
 
 
-    #article:hover img{
+    #article:hover{
         transform: scale(1.2);
         opacity: 0.5;
     }
