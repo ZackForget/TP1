@@ -41,6 +41,13 @@ footer{
         height: 100vh;
     }
 
+
+
+
+
+
+
+    
 @media screen and (min-width: 600px){
 
     header{
@@ -136,10 +143,42 @@ footer{
 
     #article{
         width: 25vw;
+        overflow: hidden;
+    }
+
+    #article img{
+        transition: transform .05s, opacity .05s;
+    }
+
+    #textStore p{
+        text-align: center;
+    }
+
+    #textStore{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        position: relative;
+        top: -300px;
+        color: white;
+        visibility: hidden;
+        transition: transform .05s;
     }
 
 
+    #article:hover img{
+        transform: scale(1.2);
+        opacity: 0.5;
     }
+
+    #article:hover #textStore{
+        visibility: visible;
+        transform: scale(1.2);
+    }
+
+
+}
 
 @media screen and (min-width: 1600px){
     #logo{

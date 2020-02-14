@@ -385,6 +385,46 @@ footer {
   }
   #article {
     width: 25vw;
+    overflow: hidden;
+  }
+  #article img {
+    -webkit-transition: opacity .05s, -webkit-transform .05s;
+    transition: opacity .05s, -webkit-transform .05s;
+    transition: transform .05s, opacity .05s;
+    transition: transform .05s, opacity .05s, -webkit-transform .05s;
+  }
+  #textStore p {
+    text-align: center;
+  }
+  #textStore {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: -300px;
+    color: white;
+    visibility: hidden;
+    -webkit-transition: -webkit-transform .05s;
+    transition: -webkit-transform .05s;
+    transition: transform .05s;
+    transition: transform .05s, -webkit-transform .05s;
+  }
+  #article:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.5;
+  }
+  #article:hover #textStore {
+    visibility: visible;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
