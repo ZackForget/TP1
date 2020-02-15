@@ -26,9 +26,17 @@ header, nav, main, footer{
     #aPropos{
         background-color: grey;
     }
+    
+    #aPropos img{
+        width: 75vw;
+    }
 
     #store{
         height: 100vh;
+        
+    }
+    #store a{
+        text-decoration: none;
     }
 
 
@@ -72,6 +80,8 @@ header, nav, main, footer{
         font-size: 115%;
         background-color: #2a2e31;
     }
+
+
 
     #containerPropos{
         max-width: 72%;

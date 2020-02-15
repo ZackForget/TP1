@@ -13,4 +13,22 @@
         align-items: center;
 
     }
+
+    footer .global *{
+        width: 20vw;
+        text-align: center;
+    }
+
+    #containSociaux{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #imgSociaux{
+        width: 35px;
+    }
+
+
+
 }
