@@ -460,6 +460,8 @@ en précédent notre extension avec «%»
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
 }
 
 #nav ul {
@@ -511,6 +513,30 @@ en précédent notre extension avec «%»
   height: 0px;
 }
 
+#containBurger {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#burger {
+  position: inherit;
+  margin: 1em;
+  width: 35px;
+}
+
+#burger::before,
+#burger::after,
+#burger div {
+  background-color: #1d1d1d;
+  border-radius: 3px solid black;
+  content: '';
+  display: block;
+  height: 4px;
+  margin: 5px 0;
+}
+
 @media screen and (min-width: 600px) {
   #bouton-menu {
     display: none;
@@ -521,9 +547,10 @@ en précédent notre extension avec «%»
   }
   #nav ul li {
     border-top: 3px solid;
+    border-bottom: 0px solid;
   }
   #nav a {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   #fondBlanc {
     visibility: visible;
