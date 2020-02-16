@@ -11,19 +11,9 @@ header, nav, main, footer{
     flex-direction: column;
 }
 
-
-
-
-
-
-
 .global{
     width: 100%;
 }
-
-
-
-
 
 #musique{
     height: 100vh;
@@ -41,7 +31,6 @@ header, nav, main, footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: roboto;
 }
 
 #album iframe{
@@ -57,7 +46,7 @@ header, nav, main, footer{
     justify-content: start;
     align-items: center;
     font-size: 100%;
-    background-color: #2a2e31;
+    background-color: $couleurGrisBackground;
 }
 
 #containerPropos{
@@ -68,7 +57,7 @@ header, nav, main, footer{
 }
 
 #textPropos{
-    color: #d2c9c9;
+    color: $couleurGrisTexte;
     margin: 10px;
     text-align: justify;
 }
@@ -100,7 +89,6 @@ header, nav, main, footer{
     #containA a{
         font-size: 150%;
         color: black;
-        text-decoration-line: underline;
         
         text-align: center;
         padding-bottom: 4px;
@@ -141,7 +129,6 @@ header, nav, main, footer{
         font-size: 150%;
         text-decoration: none;
     }
-
 
 
 
@@ -245,7 +232,7 @@ header, nav, main, footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
-
+        text-decoration: none;
         position: relative;
         top: -15vw;
         color: white;
@@ -265,13 +252,8 @@ header, nav, main, footer{
     }
 
 
-}
 
-@media screen and (min-width: 1600px){
-    #logo{
-        width: 400px;
-        height: 162px;
-    }
+
     
 
 

@@ -12,8 +12,7 @@ footer{
     }
 
     footer .global{
-        background-color: #3e4246;
-        color: white;
+        background-color: $couleurGrisBackground;
         font-family: roboto;
         width: 100%;
         height: 55px;
@@ -38,6 +37,12 @@ footer{
         width: 35px;
     }
 
+    footer a{
+        text-decoration: none;
+        color: $couleurGrisTexte;
+
+        cursor: pointer;
+    }
 
 
 }

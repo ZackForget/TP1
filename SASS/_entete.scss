@@ -35,3 +35,11 @@ header .global{
         align-items: center;
     }
 }
+
+@media screen and (min-width: 1600px){
+    #logo{
+        width: 400px;
+        height: 162px;
+    }
+
+}
