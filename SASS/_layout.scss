@@ -23,11 +23,29 @@ header, nav, main, footer{
 
 
 
+
+
 #musique{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.playlistDesktop p, .playlistDesktop iframe{
+    display: none;
+}
+
+#album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: roboto;
+}
+
 #album iframe{
-    height: 30vh;
+    height: 60vh;
 }
 
 
@@ -38,7 +56,7 @@ header, nav, main, footer{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    font-size: 115%;
+    font-size: 100%;
     background-color: #2a2e31;
 }
 
@@ -67,11 +85,57 @@ header, nav, main, footer{
 
     #store{
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #containA{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #containA a{
+        font-size: 150%;
+        color: black;
+        text-decoration-line: underline;
         
+        text-align: center;
+        padding-bottom: 4px;
     }
-    #store a{
-        text-decoration: none;
+
+    #containerSlide{
+        width: 300px;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory; 
     }
+
+    #containerSlide::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+
+#containerSlide::-webkit-scrollbar-thumb {
+    background: #3e4246;
+  }
+    
+    #store .article{
+        width: 300px;
+        height: 75vh;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+        transition: 1s ease-in;
+    }
+    
+    #store img{
+        height: 75%;
+    }
+
+
 
 
 
@@ -89,6 +153,10 @@ header, nav, main, footer{
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .playlistDesktop p, .playlistDesktop iframe{
+        display: flex;
     }
 
     #albumSpotify{
@@ -111,6 +179,10 @@ header, nav, main, footer{
         margin: 10px;
         text-align: justify;
     }
+
+    #containerPropos{
+        align-items: flex-start;
+    }
     
     #imgAPropos{
         width: 70%;
@@ -131,26 +203,31 @@ header, nav, main, footer{
         justify-content: center;
     }
 
+    #album iframe{
+        height: 380px;
+    }
+
     #textAlbum{
         display: flex;
         justify-self: center;
     }
 
-    #store{
+    #containerSlide{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         align-items: center;
         margin: 0px 15px 0px 15px;
     }
 
-    #article{
+    .article{
         width: 25vw;
         overflow: hidden;
     }
 
-    #article img{
+    .article img{
         transition: transform .05s, opacity .05s;
+        height: 100%;
+        
     }
 
     #textStore p{
@@ -171,12 +248,12 @@ header, nav, main, footer{
     }
 
 
-    #article:hover img{
+    .article:hover img{
         transform: scale(1.2);
         opacity: 0.5;
     }
 
-    #article:hover #textStore{
+    .article:hover #textStore{
         visibility: visible;
         transform: scale(1.2);
     }
