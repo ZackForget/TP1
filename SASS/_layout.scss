@@ -91,6 +91,7 @@ header, nav, main, footer{
         align-items: center;
     }
 
+
     #containA{
         display: flex;
         flex-direction: column;
@@ -135,6 +136,11 @@ header, nav, main, footer{
         height: 75%;
     }
 
+    #textStore{
+        text-align: center;
+        font-size: 150%;
+        text-decoration: none;
+    }
 
 
 

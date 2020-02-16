@@ -1,7 +1,16 @@
+footer{
+    display: none;
+}
+
 
 
 
 @media screen and (min-width: 600px){
+
+    footer{
+        display: flex
+    }
+
     footer .global{
         background-color: #3e4246;
         color: white;
