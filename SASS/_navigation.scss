@@ -14,6 +14,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: 1s;
     transform: translate(-100%, -9%);
     
 }
@@ -46,6 +47,7 @@
     flex-direction: column;
     background-color: white;
     transform: translate(-100%, 0%);
+    transition: 0,7s ease-in;
 } 
 
 #fondBlanc img{
@@ -66,13 +68,14 @@
     display: block;
     height: 4px;
     margin: 5px 0;
+    cursor: pointer;
 }
 
 #containBurger{
     position: relative;
     left: 100%;
     width: 35px;
-    top: 25px;
+    top: -30px;
     margin: 1.5em;
     margin-top: 50px;
 }
@@ -95,9 +98,15 @@
     }
 
     #burger{
-        position: inherit;
+        position: absolute;
         margin: 1em;
         width: 35px;
+    }
+
+    #chk-menu:checked + label{
+        #burger{
+            transform: translate(0%, 0%);
+        }
     }
     
     li{
@@ -112,7 +121,8 @@
     #containBurger{
         width: 100%;
         display: flex;  
-        transform: translate(-100%, 0%);  
+        transform: translate(-100%, 0%); 
+        transition: 1s; 
     }
 
     #fondBlanc{
@@ -127,3 +137,4 @@
     }
 
 }
+
