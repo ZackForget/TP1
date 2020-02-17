@@ -26,6 +26,8 @@ function menuActif(){
 
 btnHeader = document.getElementById('btnAccueil');
 btnHeader.addEventListener('click', smoothScrollAccueil)
+btnHeaderNav = document.getElementById('btnAccueilNav');
+btnHeaderNav.addEventListener('click', smoothScrollAccueil)
 
 
 function smoothScrollAccueil () {
@@ -35,9 +37,10 @@ function smoothScrollAccueil () {
   }
 
 
-
   btnMusique = document.getElementById('btnMusique');
   btnMusique.addEventListener('click', smoothScrollMusique)
+  btnMusiqueNav = document.getElementById('btnMusiqueNav');
+  btnMusiqueNav.addEventListener('click', smoothScrollMusique)
   
   
   function smoothScrollMusique () {
@@ -50,6 +53,8 @@ function smoothScrollAccueil () {
 
   btnPropos = document.getElementById('btnPropos');
   btnPropos.addEventListener('click', smoothScrollPropos)
+  btnProposNav = document.getElementById('btnProposNav');
+  btnProposNav.addEventListener('click', smoothScrollPropos)
   
   
   function smoothScrollPropos () {
@@ -62,6 +67,10 @@ function smoothScrollAccueil () {
 
   btnStore = document.getElementById('btnStore');
   btnStore.addEventListener('click', smoothScrollStore)
+  btnStoreNav = document.getElementById('btnMagasinNav');
+  btnStoreNav.addEventListener('click', smoothScrollStore)
+  
+  
   
   
   function smoothScrollStore () {
